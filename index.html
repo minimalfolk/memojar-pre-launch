@@ -1,164 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Memojar - Pre-launch Sign Up">
-  <title>Memojar - Pre-launch Sign Up</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    /* Global Styles */
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-      overflow-x: hidden;
-    }
-
-    h1, h2 {
-      margin: 0;
-    }
-
-    /* Header */
-    header {
-      background-color: #2a9d8f;
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-      position: relative;
-    }
-
-    header h1 {
-      font-size: 4rem;
-      font-weight: 600;
-      animation: slideIn 2s ease-out;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 20px;
-      opacity: 0;
-      animation: fadeIn 3s forwards;
-      animation-delay: 1s;
-    }
-
-    .animated-text {
-      color: #e76f51;
-      font-size: 3rem;
-      font-weight: bold;
-      animation: animateText 3s ease-out infinite;
-    }
-
-    /* Animations */
-    @keyframes slideIn {
-      0% { transform: translateY(-50px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    @keyframes animateText {
-      0% { color: #e76f51; }
-      50% { color: #f4a261; }
-      100% { color: #2a9d8f; }
-    }
-
-    /* Main Section */
-    .container {
-      width: 80%;
-      max-width: 700px;
-      margin: 50px auto;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .container h2 {
-      font-size: 2rem;
-      color: #2a9d8f;
-      margin-bottom: 20px;
-    }
-
-    .container p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-
-    .google-form {
-      width: 100%;
-      height: 500px;
-      border: none;
-      margin-top: 30px;
-    }
-
-    /* Image section */
-    .image {
-      background-image: url('https://via.placeholder.com/800x400'); /* Replace with your image */
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      margin-top: 40px;
-      border-radius: 8px;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #264653;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 1.5rem;
-    }
-
-    footer a:hover {
-      color: #f4a261;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memojar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .body-content {
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeUp 2s ease-in-out;
+        }
+        .body-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .signup-form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .signup-form input[type="email"] {
+            padding: 10px;
+            font-size: 1em;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .signup-form button {
+            padding: 10px 20px;
+            background-color: #1a1a1a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signup-form button:hover {
+            background-color: #333;
+        }
+        .footer {
+            text-align: center;
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            color: white;
+        }
+        .footer a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        @keyframes fadeUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        Memojar
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Memojar</h1>
-    <h2 class="animated-text">Pre-launch</h2>
-    <p>Store your memories forever. Be the first to know when we launch!</p>
-  </header>
+    <section class="body-content">
+        <h1>Store Your Memory Digitally</h1>
+        <p>Memojar is a new way to digitally store your memory and share it with your friends.</p>
+        <p>Get ready to relive your most unforgettable moments in a whole new way.</p>
+        <p>Memojar is coming soon – A social media experience designed to celebrate memories like never before.</p>
+        <p>Stay tuned for the launch and be among the first to capture, share, and connect with your friends and the world.</p>
+        <p>Join us on the journey to create and cherish your personal timeline.</p>
+        <p><strong>Coming soon to your device!</strong></p>
 
-  <!-- Main Content Section -->
-  <div class="container">
-    <h2>Join the Waitlist!</h2>
-    <p>Sign up for early access to Memojar and start storing your precious memories with us. Get exclusive updates about the launch.</p>
+        <div class="signup-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button>Sign Up</button>
+        </div>
 
-    <!-- Google Form Embed -->
-    <iframe class="google-form" src="https://docs.google.com/form>Loading…</iframe>
-  </div>
+        <img src="your-image.jpg" alt="Memory Animation" style="width: 80%; margin-top: 30px; animation: fadeUp 3s ease-in-out;">
+    </section>
 
-  <!-- Image Section (Optional) -->
-  <div class="image"></div>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 Memojar. All Rights Reserved.</p>
-    <div>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com" target="_blank">YouTube</a>
-    </div>
-  </footer>
-
+    <footer class="footer">
+        <img src="logo.png" alt="Memojar Logo" style="width: 150px; margin-bottom: 20px;">
+        <div>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+        </div>
+    </footer>
 </body>
 </html>
