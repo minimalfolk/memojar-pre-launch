@@ -5,33 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Memojar - Pre-launch Sign Up">
   <title>Memojar - Pre-launch Sign Up</title>
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    /* Global Styles */
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f0f0f0;
+      background-color: #f9f9f9;
       color: #333;
       overflow-x: hidden;
     }
 
+    h1, h2 {
+      margin: 0;
+    }
+
+    /* Header */
     header {
       background-color: #2a9d8f;
       color: white;
       text-align: center;
-      padding: 100px 20px;
+      padding: 80px 20px;
       position: relative;
     }
 
     header h1 {
-      font-size: 5rem;
-      margin: 0;
+      font-size: 4rem;
+      font-weight: 600;
       animation: slideIn 2s ease-out;
     }
 
-    header h2 {
-      font-size: 1.5rem;
+    header p {
+      font-size: 1.2rem;
       margin-top: 20px;
       opacity: 0;
       animation: fadeIn 3s forwards;
@@ -40,11 +46,12 @@
 
     .animated-text {
       color: #e76f51;
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: bold;
       animation: animateText 3s ease-out infinite;
     }
 
+    /* Animations */
     @keyframes slideIn {
       0% { transform: translateY(-50px); opacity: 0; }
       100% { transform: translateY(0); opacity: 1; }
@@ -61,46 +68,45 @@
       100% { color: #2a9d8f; }
     }
 
+    /* Main Section */
     .container {
       width: 80%;
-      max-width: 600px;
+      max-width: 700px;
       margin: 50px auto;
       text-align: center;
+      padding: 20px;
     }
 
-    input[type="email"] {
-      width: 80%;
-      padding: 15px;
-      margin: 20px 0;
-      border: 2px solid #ccc;
-      border-radius: 5px;
-      font-size: 1.2rem;
+    .container h2 {
+      font-size: 2rem;
+      color: #2a9d8f;
+      margin-bottom: 20px;
     }
 
-    button {
-      padding: 15px 25px;
-      font-size: 1.2rem;
-      background-color: #e76f51;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    .container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
     }
 
-    button:hover {
-      background-color: #f4a261;
-    }
-
-    .image {
+    .google-form {
       width: 100%;
-      height: auto;
-      margin: 40px 0;
-      background-image: url('your-image-link.jpg'); /* Replace with an image URL */
+      height: 500px;
+      border: none;
+      margin-top: 30px;
+    }
+
+    /* Image section */
+    .image {
+      background-image: url('https://via.placeholder.com/800x400'); /* Replace with your image */
       background-size: cover;
       background-position: center;
       height: 300px;
+      margin-top: 40px;
+      border-radius: 8px;
     }
 
+    /* Footer */
     footer {
       background-color: #264653;
       color: white;
@@ -121,30 +127,30 @@
     footer a:hover {
       color: #f4a261;
     }
-
   </style>
 </head>
 <body>
 
+  <!-- Header Section -->
   <header>
     <h1>Memojar</h1>
     <h2 class="animated-text">Pre-launch</h2>
-    <p>Store your memories forever</p>
+    <p>Store your memories forever. Be the first to know when we launch!</p>
   </header>
 
+  <!-- Main Content Section -->
   <div class="container">
     <h2>Join the Waitlist!</h2>
-    <p>Be the first to know when we launch! Get exclusive early access to store your memories with Memojar.</p>
+    <p>Sign up for early access to Memojar and start storing your precious memories with us. Get exclusive updates about the launch.</p>
 
-    <!-- Sign-up Form -->
-    <form action="https://example.com/submit-email" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <button type="submit">Sign Up</button>
-    </form>
+    <!-- Google Form Embed -->
+    <iframe class="google-form" src="https://docs.google.com/form>Loading…</iframe>
   </div>
 
+  <!-- Image Section (Optional) -->
   <div class="image"></div>
 
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 Memojar. All Rights Reserved.</p>
     <div>
