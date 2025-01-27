@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Memojar - Pre-launch Sign Up">
+  <title>Memojar - Pre-launch Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #2a9d8f;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 5rem;
+      margin: 0;
+      animation: slideIn 2s ease-out;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeIn 3s forwards;
+      animation-delay: 1s;
+    }
+
+    .animated-text {
+      color: #e76f51;
+      font-size: 2.5rem;
+      font-weight: bold;
+      animation: animateText 3s ease-out infinite;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes animateText {
+      0% { color: #e76f51; }
+      50% { color: #f4a261; }
+      100% { color: #2a9d8f; }
+    }
+
+    .container {
+      width: 80%;
+      max-width: 600px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    input[type="email"] {
+      width: 80%;
+      padding: 15px;
+      margin: 20px 0;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 1.2rem;
+      background-color: #e76f51;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f4a261;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      margin: 40px 0;
+      background-image: url('your-image-link.jpg'); /* Replace with an image URL */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+    }
+
+    footer {
+      background-color: #264653;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.5rem;
+    }
+
+    footer a:hover {
+      color: #f4a261;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Memojar</h1>
+    <h2 class="animated-text">Pre-launch</h2>
+    <p>Store your memories forever</p>
+  </header>
+
+  <div class="container">
+    <h2>Join the Waitlist!</h2>
+    <p>Be the first to know when we launch! Get exclusive early access to store your memories with Memojar.</p>
+
+    <!-- Sign-up Form -->
+    <form action="https://example.com/submit-email" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <div class="image"></div>
+
+  <footer>
+    <p>&copy; 2025 Memojar. All Rights Reserved.</p>
+    <div>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com" target="_blank">YouTube</a>
+    </div>
+  </footer>
+
+</body>
+</html>
