@@ -1,216 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Memojar is a new way to digitally store and share your memories. Coming soon. Sign up now to stay updated.">
+    <meta name="keywords" content="memories, digital memories, social media, store memories, share memories, pre-launch">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Memojar</title>
-    <style>
-        /* Reset default browser styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0; /* Light gray background */
-            color: #333;
-        }
-
-        header {
-            background-color: #0538A9; /* Blue header */
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            font-size: 2.5rem;
-            transition: all 0.3s ease;
-        }
-
-        /* Updated logo to use an image */
-        .logo img {
-            width: 150px;  /* Adjust logo size */
-            height: auto;
-        }
-
-        /* Navigation styles */
-        nav {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: #f3e6f7;
-            text-decoration: none;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #f8a5c2;
-        }
-
-        /* Hamburger menu for smaller screens */
-        .menu-toggle {
-            display: none;
-            font-size: 2rem;
-            color: white;
-            cursor: pointer;
-        }
-
-        .nav-links {
-            display: flex;
-        }
-
-        /* Mobile styles */
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                right: 20px;
-                background-color: #0538A9;
-                width: 200px;
-                padding: 20px;
-                border-radius: 8px;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links a {
-                padding: 10px;
-                font-size: 1.2rem;
-                text-align: right;
-                margin-top: 10px;
-            }
-        }
-
-        /* Body content section */
-        .body-content {
-            text-align: center;
-            padding: 50px 20px;
-            animation: fadeUp 2s ease-in-out;
-            font-size: 1.25rem;
-            line-height: 1.8;
-        }
-
-        .body-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 30px;
-            color: #4e8d7c;
-        }
-
-        .body-content p {
-            margin-bottom: 20px;
-        }
-
-        .google-form-btn {
-            padding: 15px 20px;
-            background-color: #0538A9; /* Blue button */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
-            margin-top: 20px;
-        }
-
-        .google-form-btn:hover {
-            background-color: #ff6584;
-        }
-
-        .signup-form {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 30px;
-        }
-
-        .signup-form input[type="email"] {
-            padding: 15px;
-            font-size: 1.1rem;
-            width: 300px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-        }
-
-        .signup-form button {
-            padding: 15px 20px;
-            background-color: #f8a5c2;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .signup-form button:hover {
-            background-color: #ff6584;
-        }
-
-        /* Animation for fading up */
-        @keyframes fadeUp {
-            0% { opacity: 0; transform: translateY(50px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            background-color: #0538A9; /* Blue footer */
-            padding: 20px 0;
-            color: white;
-        }
-
-        .footer a {
-            margin: 0 10px;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-
-        .footer a:hover {
-            color: #f8a5c2;
-        }
-
-        /* Slide Down Effect */
-        .slide-down {
-            animation: slideDown 0.5s ease-out forwards;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Memojar - Coming Soon</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Open Graph Meta Tags for Social Media Optimization -->
+    <meta property="og:title" content="Memojar - Store Your Memories">
+    <meta property="og:description" content="Memojar is a new way to store and share memories. Coming soon!">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="https://memojar.in">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
+
 <body>
+
     <header>
         <div class="logo">
-            <!-- Logo as an image -->
-            <img src="https://github.com/minimalfolk/memojar-pre-launch/blob/main/image/1000029526%20(1).jpg?raw=true" alt="Memojar Logo">
+            <img src="https://your-logo-url.com/logo.png" alt="Memojar Logo">
         </div>
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-        <nav class="nav-links" id="nav-links">
+        <nav id="nav-links">
             <a href="#">Home</a>
             <a href="#">Features</a>
             <a href="#">About</a>
@@ -218,48 +35,30 @@
         </nav>
     </header>
 
-    <section class="body-content">
+    <main>
         <h1>Store Your Memory Digitally</h1>
-        <p>Memojar is a new way to digitally store your memory and share it with your friends.</p>
+        <p>Memojar is a new way to digitally store and share your memories with friends and the world.</p>
 
-        <!-- Google Form Button -->
         <button class="google-form-btn" onclick="window.location.href='https://forms.gle/donSzjoqHwB3jDrX7'">Sign Up via Google Form</button>
 
-        <p>Get ready to relive your most unforgettable moments in a whole new way.</p>
-        <p>Memojar is coming soon – A social media experience designed to celebrate memories like never before.</p>
-        <p>Stay tuned for the launch and be among the first to capture, share, and connect with your friends and the world.</p>
-        <p><strong>Coming soon to your device!</strong></p>
+        <p>Be among the first to relive your most unforgettable moments in a whole new way. Coming soon!</p>
 
         <div class="signup-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button>Sign Up</button>
+            <input type="email" placeholder="Enter your email" required aria-label="Enter your email address">
+            <button aria-label="Sign Up for updates">Sign Up</button>
         </div>
+    </main>
 
-        <img src="your-image.jpg" alt="Memory Animation" style="width: 80%; margin-top: 30px; animation: fadeUp 3s ease-in-out;">
-    </section>
-
-    <footer class="footer">
-        <img src="https://github.com/minimalfolk/memojar-pre-launch/blob/main/image/1000029526%20(1).jpg?raw=true" style="width: 150px; margin-bottom: 20px;">
+    <footer>
         <div>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://instagram.com/memojar.in" target="_blank">Instagram</a>
-            <a href="https://youtube.com" target="_blank">YouTube</a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+            <a href="https://instagram.com/memojar.in" target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube">YouTube</a>
         </div>
     </footer>
 
-    <script>
-        // JavaScript for menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
+    <script src="main.js" defer></script>
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            if (navLinks.classList.contains('active')) {
-                navLinks.classList.add('slide-down');
-            } else {
-                navLinks.classList.remove('slide-down');
-            }
-        });
-    </script>
 </body>
+
 </html>
