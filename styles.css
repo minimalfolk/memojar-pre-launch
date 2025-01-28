@@ -1,0 +1,114 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #007BFF;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  display: none;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  margin: 10px 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-toggle {
+  font-size: 1.2em;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.hero {
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 38px;
+  margin: 20px 0;
+}
+
+.hero-subtitle {
+  font-family: 'Caveat', cursive;
+  font-size: 35px;
+}
+
+.google-form-container iframe {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.footer {
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.footer-logo {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.2em;
+}
+
+.footer nav {
+  margin: 10px 0;
+}
+
+.footer nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 5px;
+}
+
+.footer-copy {
+  font-size: 0.8em;
+}
